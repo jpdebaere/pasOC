@@ -1,6 +1,6 @@
 ﻿uses модПК;
 {$product 'OberonVM'}
-{$version '0009'}
+{$version '2018-10-24 0022'}
 {$company 'KBK Technicks ltd.'}
 {$copyright 'KBK Technicks ltd.'}
 {$trademark 'BSD-2 Clause'}
