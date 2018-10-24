@@ -20,6 +20,7 @@ type
       constructor Create(пМС: integer; пПроц: procedure);
       begin
          inherited Create(пМС, пПроц);
+         Writeln('тТаймер.Create');
          self._интервал := пМС;
          self._проц := пПроц;
       end;
