@@ -19,6 +19,7 @@ type
       ///   пПроц -- процедура для вызова
       constructor Create(пМС: integer; пПроц: procedure);
       begin
+         inherited Create(пМС, пПроц);
          self._интервал := пМС;
          self._проц := пПроц;
       end;
