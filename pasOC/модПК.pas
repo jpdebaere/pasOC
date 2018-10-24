@@ -16,13 +16,18 @@ type
       constructor Create;
       begin
          self.таймер := модТаймер.тТаймер.Create(таймерИнтервал, self.Лог);
-         self.таймер.Старт;
       end;
       
       ///Тестовая процедура для проверки на таймер
       procedure Лог;
       begin
          Writeln('Проверка таймера');
+      end;
+      
+      ///Запуск всего ПК
+      procedure Старт;
+      begin
+         self.таймер.Старт;
       end;
    end;
 
