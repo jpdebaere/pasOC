@@ -7,6 +7,8 @@ uses GraphWPF;
 
 begin
    var окно := Window;
-   окно.Title:='OberonVM';
-
+   окно.Title := 'OberonVM';
+   var шир := окно.Width;
+   var выс := окно.Height;
+   FillRectangle(0, 0, шир, выс, Color.FromRgb(0, 0, 0));
 end.
