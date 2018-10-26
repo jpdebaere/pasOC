@@ -81,6 +81,46 @@ type
       begin
          self._Макс(пЗнач);
       end;
+      
+      ///Установить значение регистра
+      procedure Уст(пЗнач: integer);
+      begin
+         self.знач := пЗнач;
+         self._Флаги;
+      end;
+      
+      ///Получить значение регистра
+      function Получ(): integer;
+      begin
+         Result := self.знач;
+      end;
+      
+      ///Умножить значение регистра
+      procedure Умнож(пЗнач: integer);
+      begin
+         if self.знач * пЗнач > integer.MaxValue then
+         begin
+            self._перенос := true;   
+            self.знач := integer.MinValue;
+         end
+         else
+            self.знач *= пЗнач;
+         self._Флаги; 
+      end;
+      
+      ///Разделить значение регистра
+      function Дел(пЗнач: integer): boolean;
+      begin
+         if пЗнач = 0 then
+            Result := true
+         else
+         begin
+            self.знач := self.знач div пЗнач;
+            self._Флаги;
+            Result := false
+         end;
+      end;
+   
    end;
 
 implementation
