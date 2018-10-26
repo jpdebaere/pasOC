@@ -2,6 +2,14 @@
 <Project FileVersion="2" Name="pasOC" MainFile="pasOC.pas" OutputFileName="pasOC.exe" OutputDirectory="" ProjectType="ConsoleApp" IncludeDebugInfo="True" GenerateXMLDoc="False" CommandLineArguments="" AppIcon="" DeleteEXE="False" DeletePDB="True" Product="" Company="" Trademark="" Copyright="" MajorVersion="0" MinorVersion="0" BuildVersion="0" RevisionVersion="0">
   <Items>
     <Item Type="SourceFile" Name="pasOC.pas" Path="pasOC.pas" />
+    <Item Type="SourceFile" Name="pasOC.pas" Path="pasOC.pas" />
+    <Item Type="SourceFile" Name="модКонсоль.pas" Path="модКонсоль.pas" />
+    <Item Type="SourceFile" Name="модПК.pas" Path="модПК.pas" />
+    <Item Type="SourceFile" Name="модРег.pas" Path="модРег.pas" />
+    <Item Type="SourceFile" Name="модТаймер.pas" Path="модТаймер.pas" />
+    <Item Type="SourceFile" Name="модЦП.pas" Path="модЦП.pas" />
+    <Item Type="SourceFile" Name="модЭкран.pas" Path="модЭкран.pas" />
+    <Item Type="SourceFile" Name="модРон.pas" Path="модРон.pas" />
     <Item Type="Reference" AssemblyName="System" FullAssemblyName="System.dll" />
   </Items>
 </Project>
